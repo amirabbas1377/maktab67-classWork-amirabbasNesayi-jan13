@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginForm</string>
+    <string name="title">login form</string>
+    <string name="first_name_hint">enter your first name</string>
+    <string name="last_name_hint">enter your last name</string>
+    <string name="show_result">hello %s %s.</string>
+</resources>

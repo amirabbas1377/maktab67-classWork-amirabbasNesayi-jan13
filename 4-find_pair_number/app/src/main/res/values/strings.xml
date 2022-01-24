@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Find_numbers</string>
+    <string name="confirm_string">Confirm</string>
+    <string name="hint_text">insert the number with space</string>
+    <string name="sum_text">sum</string>
+    <string name="show_result">%d, %d</string>
+</resources>

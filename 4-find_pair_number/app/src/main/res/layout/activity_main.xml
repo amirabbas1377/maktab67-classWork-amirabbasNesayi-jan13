@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="@dimen/length_view_size"
+        android:layout_height="@dimen/height_view_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding"
+        android:text="@string/hint_text"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_view_size"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_text"
+        android:padding="@dimen/padding"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+    <EditText
+        android:id="@+id/sum_view"
+        android:layout_width="@dimen/length_view_size"
+        android:layout_height="@dimen/height_view_size"
+        android:gravity="center_vertical"
+        android:hint="@string/sum_text"
+        android:padding="@dimen/padding"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="@dimen/length_view_size"
+        android:layout_height="@dimen/height_view_size"
+        android:background="@color/button_color"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/confirm_string"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/result_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="@dimen/length_view_size"
+        android:layout_height="@dimen/height_view_size"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:textColor="@color/text_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="49dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="410dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
